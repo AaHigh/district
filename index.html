@@ -11,7 +11,7 @@
   <meta property="og:url" content="https://district.ahightower.com/">
   <meta property="og:title" content="High Tower District Rules &amp; Nov 3 Guide">
   <meta property="og:description" content="NO criminal culture. Respect. Local politics &amp; public safety for Fresno Districts 1 &amp; 3 and US Cong. Districts 21, 20, 5 &amp; 3. Endorse Hilton • Gates • Kirkland • Tangipa. District 3: Not Keisha Thomas.">
-  <meta property="og:image" content="https://district.ahightower.com/og.png">
+  <meta property="og:image" content="og.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:image:alt" content="High Tower District group rules and November 3 endorsements">
@@ -21,7 +21,7 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="High Tower District Rules &amp; Nov 3 Guide">
   <meta name="twitter:description" content="NO criminal culture. Respect. Local politics for Fresno Districts 1 &amp; 3 and US Cong. Districts 21, 20, 5 &amp; 3. Endorse Hilton • Gates • Kirkland • Tangipa.">
-  <meta name="twitter:image" content="https://district.ahightower.com/og.png">
+  <meta name="twitter:image" content="og.png">
 
   <!--
     v3 (2026-10-26): Grok's page as the base style (Tailwind, Inter + Playfair Display,
@@ -30,6 +30,11 @@
     Endorsements are Aaron Hightower's personal picks.
     v4 (2026-10-26): pizza line added first in the new box, pizza event photo with the
     Pizzaholics mention, and David Tangipa added to the endorsements.
+    v5 (2026-10-26): image links switched to relative local paths (og.png) so the page
+    previews correctly on a local server before GitHub Pages publishes.
+    v6 (2026-10-26): single pizza photo replaced by a three-photo row, each opening
+    full screen on tap; October 7 sequence noted (Shirley meeting immediately before
+    the Tower District meeting, same day).
   -->
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -108,10 +113,20 @@
         <p class="text-slate-400 text-sm mt-3">These lines were added so Central Valley pizza talk and political discussion each have a clear home and broader reach inside the main group.</p>
       </div>
 
-      <figure class="mt-4">
-        <img src="kirkland-event-pizza.jpg" alt="Pizza on the table at the October 7 Fresno reception with Kyle Kirkland and Nick Shirley" class="w-full rounded-lg border border-slate-700">
-        <figcaption class="text-slate-400 text-sm mt-2">Pizza on the table at the October 7 Fresno reception with Kyle Kirkland and Nick Shirley. Central Valley pizza talk also lives in the <a href="https://www.facebook.com/groups/742034912983989/" target="_blank" rel="noopener" class="text-amber-300 hover:text-amber-200">Pizzaholics group</a>.</figcaption>
-      </figure>
+      <div class="mt-4">
+        <div class="grid grid-cols-3 gap-3">
+          <a href="kirkland-event-pizza.jpg" target="_blank" rel="noopener">
+            <img src="kirkland-event-pizza.jpg" alt="Pizza on the table while Nick Shirley interviews Kyle Kirkland" class="w-full h-28 sm:h-36 object-cover rounded-lg border border-slate-700">
+          </a>
+          <a href="aaron-kirkland-selfie.jpg" target="_blank" rel="noopener">
+            <img src="aaron-kirkland-selfie.jpg" alt="Aaron Hightower with Kyle Kirkland" class="w-full h-28 sm:h-36 object-cover rounded-lg border border-slate-700">
+          </a>
+          <a href="tangipa-kirkland-shirley.jpg" target="_blank" rel="noopener">
+            <img src="tangipa-kirkland-shirley.jpg" alt="David Tangipa, Kyle Kirkland, and Nick Shirley standing together" class="w-full h-28 sm:h-36 object-cover rounded-lg border border-slate-700">
+          </a>
+        </div>
+        <p class="text-slate-400 text-sm mt-2">Tap any photo to view it full screen, then rotate your phone for the details. Three photos from October 7 in Fresno, when the Nick Shirley meeting came immediately before the Tower District meeting: pizza on the table at the reception, Aaron with Kyle Kirkland, and David Tangipa with Kirkland and Shirley. Central Valley pizza talk also lives in the <a href="https://www.facebook.com/groups/742034912983989/" target="_blank" rel="noopener" class="text-amber-300 hover:text-amber-200">Pizzaholics group</a>.</p>
+      </div>
     </section>
 
     <!-- Admin note -->
